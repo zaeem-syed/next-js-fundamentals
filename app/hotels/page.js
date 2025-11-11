@@ -1,14 +1,9 @@
+// import { getHotelsData } from "../mountain/page";
 import HotelBlock from "./HotelBlock";
+import { getHotelsData } from "@/app/lib/hotels-data";
 
-
-export  async function getData()
-{
-    const res=await fetch("https://snowtooth-api-rest.fly.dev");
-    return res.json();
-}
 export default async function Page() {
-  const data = await getData();
-  console.log(data);
+  const data = await getHotelsData();
 
   return (
     <main className="min-h-screen bg-slate-900 flex flex-col items-center justify-center p-8">
@@ -31,9 +26,15 @@ export default async function Page() {
             </thead>
 
             <tbody>
-                {data.map((hotel,index)=> (
-                    <HotelBlock id={hotel.id} key={hotel.id} name={hotel.name} capacity={hotel.capacity} index={index}/>
-                ))}
+              {data.map((hotel, index) => (
+                <HotelBlock
+                  key={hotel.id}
+                  id={hotel.id}
+                  name={hotel.name}
+                  capacity={hotel.capacity}
+                  index={index}
+                />
+              ))}
             </tbody>
           </table>
         </div>
