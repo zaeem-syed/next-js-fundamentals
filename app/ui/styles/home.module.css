@@ -1,9 +1,11 @@
-.text_wisteria{
-    color:#8344ad;
+.text_emerald {
+  color: #059669;
 }
-.bg_wisteria{
-    background-color: #8344ad;
+
+.bg_emerald {
+  background-color: #059669;
 }
-.fit-content{
-    width: fit-content;
+
+.fit-content {
+  width: fit-content;
 }
