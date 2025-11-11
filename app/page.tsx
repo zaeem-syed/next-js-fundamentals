@@ -24,7 +24,7 @@ export default function Home() {
       <section className="flex-[0.7] bg-gray-50 flex items-center justify-center p-8">
         <div className="max-w-md">
           <h1 className={`text-4xl font-bold mb-4 ${styles.text_wisteria}`}>
-            Welcome
+            Welcome to the blog
           </h1>
           <p className="text-lg text-gray-700 mb-4">
             Massa urna magnis dignissim id euismod porttitor vitae etiam viverra
@@ -35,7 +35,7 @@ export default function Home() {
             href="/blog/posts"
             className={`outline outline-1 outline-offset-2 border-purple-700 text-purple-700 hover:text-white py-2 px-4 rounded hover:bg-purple-800 w-fit ${styles.fit_content}`}
           >
-            Go to Blog
+            Read
           </a>
         </div>
       </section>
